@@ -19,7 +19,7 @@ public class Main {
                 break;
             }
             if (input.equals("1")) {
-                interrogateShephard();
+                interrogateShepherd();
             } else {
                 beInterrogated();
             }
@@ -45,7 +45,7 @@ public class Main {
         return new Shepherd(code);
     }
 
-    public static void interrogateShephard() {
+    public static void interrogateShepherd() {
         System.out.println("You can interrogate Shepherd");
         Shepherd shepherd = hireShepherd();
         int attempt = 0;
