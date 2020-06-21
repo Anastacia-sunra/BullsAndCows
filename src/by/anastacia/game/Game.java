@@ -1,7 +1,7 @@
 package by.anastacia.game;
 
 import by.anastacia.game.exception.ValidationException;
-import by.anastacia.game.service.Herd;
+import by.anastacia.game.entity.Herd;
 import by.anastacia.game.service.Shepherd;
 import by.anastacia.game.service.Vet;
 import by.anastacia.game.validator.Validator;

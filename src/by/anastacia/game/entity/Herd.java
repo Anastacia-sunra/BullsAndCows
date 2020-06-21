@@ -1,4 +1,4 @@
-package by.anastacia.game.service;
+package by.anastacia.game.entity;
 
 import java.util.Objects;
 
