@@ -1,3 +1,5 @@
+package by.anastacia.game.exception;
+
 public class ValidationException extends Exception {
 
 public static final String WRONG_LENGTH = "Wrong string length";

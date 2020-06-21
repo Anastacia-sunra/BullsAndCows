@@ -1,3 +1,7 @@
+package by.anastacia.game.validator;
+
+import by.anastacia.game.exception.ValidationException;
+
 import java.util.HashSet;
 import java.util.Set;
 ;
@@ -5,7 +9,7 @@ import java.util.Set;
 public class Validator {
 
     // метод выбрасывает исключения, если строка не соответствует формату
-    public static char[] validateString(String s) throws ValidationException{
+    public static char[] validateString(String s) throws ValidationException {
 
         if (s.length() != 4){
             throw new ValidationException(ValidationException.WRONG_LENGTH);

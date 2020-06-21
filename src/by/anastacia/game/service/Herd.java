@@ -1,3 +1,5 @@
+package by.anastacia.game.service;
+
 import java.util.Objects;
 
 public class Herd {

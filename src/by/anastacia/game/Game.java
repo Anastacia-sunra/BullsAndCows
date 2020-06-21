@@ -1,3 +1,11 @@
+package by.anastacia.game;
+
+import by.anastacia.game.exception.ValidationException;
+import by.anastacia.game.service.Herd;
+import by.anastacia.game.service.Shepherd;
+import by.anastacia.game.service.Vet;
+import by.anastacia.game.validator.Validator;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -15,7 +23,7 @@ public class Game {
             System.out.println("Input \"1\" if you want to guess a number that was chosen by the computer" + '\n'
                     + "And any other key if you want to chose your own number");
             String input = scanner.nextLine();
-            if(input.equals("0")){
+            if (input.equals("0")) {
                 break;
             }
             if (input.equals("1")) {
@@ -25,7 +33,7 @@ public class Game {
             }
             again = "Do you want to play again?";
         }
-        while(true);
+        while (true);
     }
 
     public static Shepherd hireShepherd() {
@@ -41,7 +49,6 @@ public class Game {
             }
         }
         while (code == null);
-        //System.out.println(Arrays.toString(code));
         return new Shepherd(code);
     }
 
@@ -79,22 +86,21 @@ public class Game {
     public static void beInterrogated() {
         System.out.println("Now you will be interrogated");
         Vet vet = new Vet();
-        int attempt =0;
-        do{
+        int attempt = 0;
+        do {
             askMe(vet);
             attempt++;
         }
-        while(vet.getVariants().size() > 1);
-        if(vet.getVariants().size() == 1) {
+        while (vet.getVariants().size() > 1);
+        if (vet.getVariants().size() == 1) {
             System.out.println("Your number is: " + String.valueOf(vet.getVariants().get(0)) + '\n'
                     + "Number of attempts is " + attempt);
-        }
-        else {
+        } else {
             System.out.println("You made a mistake");
         }
     }
 
-    public static void askMe(Vet vet){
+    public static void askMe(Vet vet) {
         char[] code = vet.guessCode();
         System.out.println(Arrays.toString(code));
         System.out.print("Bulls: ");

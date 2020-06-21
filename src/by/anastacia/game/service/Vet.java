@@ -1,3 +1,9 @@
+package by.anastacia.game.service;
+
+import by.anastacia.game.exception.ValidationException;
+import by.anastacia.game.service.Herd;
+import by.anastacia.game.validator.Validator;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

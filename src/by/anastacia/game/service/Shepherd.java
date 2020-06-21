@@ -1,3 +1,7 @@
+package by.anastacia.game.service;
+
+import by.anastacia.game.service.Herd;
+
 public class Shepherd {
     private char[] secretCode;
 
