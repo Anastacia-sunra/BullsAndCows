@@ -32,3 +32,4 @@ public class Shepherd {
         return new Herd(bulls,cows);
     }
 }
+
